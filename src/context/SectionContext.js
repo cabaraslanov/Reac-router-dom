@@ -5,6 +5,7 @@ export const context = createContext()
  const Provider = ({children})=>{
 
     const [login,setLogin] = useState(false);
+    console.log(login, "login");
 
     const submit = (e)=>{
         e.preventDefault();

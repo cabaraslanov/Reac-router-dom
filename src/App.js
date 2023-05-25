@@ -12,6 +12,8 @@ import { Profiles } from "react";
 import Profil from "./pages/Profil";
 import Login from "./pages/Login";
 import LoginLayout from "./pages/LoginLayout";
+import ProfilLayout from "./pages/ProfilLayout";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -22,12 +24,22 @@ function App() {
             <Route index={true} element={<Section/>}/>
             <Route path="blog" element={<Blog/>}/>
             <Route path="contact" element={<Contact/>}/>
+            <Route path="/profil" element={<LoginLayout><Profil/></LoginLayout>}/>
             <Route path="url/:id" element={<Url/>}/>
-            <Route path="profil" element={<Profil/>}/>
           </Route>
 
+          <Route path="/login" element={<ProfilLayout/>}>
+          <Route index={true} element={<Login/>}/>
+
+
+          </Route>
+
+
+
+
+{/* 
           <Route path="secLoy" element={<LoginLayout><Profil/></LoginLayout>}/>
-          <Route path="login" element={<Login/>}/>
+          <Route path="login" element={<Login/>}/> */}
 
           {/* <Route path="/" element={<Section/>}/>
           <Route path="bloq" element={<Blog/>}/>

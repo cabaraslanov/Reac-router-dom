@@ -1,8 +1,11 @@
 import React from 'react'
+import ProfilNav from '../components/ProfilNav'
 
 const Profil = () => {
   return (
-    <div>Profil</div>
+    <>Profil
+      <ProfilNav/>
+    </>
   )
 }
 

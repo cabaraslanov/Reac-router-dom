@@ -29,7 +29,13 @@ code {
 .footer{
   height:100px;
   background-color:blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
 }
+
+
 .navUl{
   display:flex;
   gap:20px
@@ -38,3 +44,25 @@ a{
   text-decoration: none;
 }
 
+.ProfilNav{
+  display: flex;
+  gap: 20px;
+}
+.exit{
+  background-color: chartreuse;
+  padding: 5px;
+  cursor:pointer;
+
+}
+.login{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: green;
+}
+.logout{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: red;
+}

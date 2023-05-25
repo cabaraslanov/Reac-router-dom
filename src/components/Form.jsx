@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { context } from '../context/SectionContext';
+
 const Form = () => {
-
     const {submit,change,state} = useContext(context)
-
   return (
     <>
         <form onSubmit={submit}>
